@@ -1091,6 +1091,9 @@ button.btn.btn-yellow {
 .dark-block .nav-tabs p.d-flex {
     background-color: rgba(0,0,0,0);
 }
+.dark-block .nav-tabs p.d-flex:hover {
+    cursor: pointer;
+}
 .dark-block .nav-link {
     border: none;
     padding: 0;
@@ -1842,15 +1845,20 @@ button.btn.btn-yellow {
 .partners .container.outer {
     margin-bottom: 91px;
 }
-
-.slideControls-2 {
-    z-index: 10;
+.partners .swiper-slide {
+    text-align: center;
 }
-
-.part-prev-icon {
+.partners .swiper-wrapper {
+    align-items: center;
+}
+.partners .swiper-pagination-l {
+    text-align: center;
+    margin-top: 50px;
+}
+.swiper-button-next-l {
     content: url(../img/prev-2.svg);
     position: absolute;
-    top: 35.5%;
+    top: 10%;
     left: -15px;
     height: 30px;
     width: 30px;
@@ -1860,10 +1868,10 @@ button.btn.btn-yellow {
     background-color: #ffe53d;
     z-index: 1;
 }
-.part-next-icon {
+.swiper-button-prev-l {
     content: url(../img/next-2.svg);
     position: absolute;
-    top: 35.5%;
+    top: 10%;
     right: -15px;
     height: 30px;
     width: 30px;
@@ -1879,16 +1887,8 @@ button.btn.btn-yellow {
     position: relative;
 }
 
-.partners ul#autoWidth_2 {
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    margin-top: 50px;
-    margin-bottom: 10px;
-}
-
 .partners .nav-tabs.justify-content-end {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .partners .nav-tabs {
@@ -1924,11 +1924,6 @@ button.btn.btn-yellow {
 }
 .partners .inner.container {
     padding: 0;
-}
-.partners .box {
-    justify-content: space-between;
-    text-align: center;
-    height: 80px;
 }
 /* End Partners */
 
@@ -1996,13 +1991,13 @@ button.btn.btn-yellow {
         padding-left: 35px;
     }
     .swiper-button-next,
-    .part-next-icon,
-    .prod-next-icon {
+    .swiper-button-next-l,
+    .swiper-button-prev-l {
         display: none;
     }
     .swiper-button-prev,
-    .part-prev-icon,
-    .prod-prev-icon {
+    .swiper-button-next-l,
+    .swiper-button-prev-l {
         display: none;
     }
 }
@@ -2089,10 +2084,10 @@ button.btn.btn-yellow {
         width: 100%;
         margin-left: 0;
     }
-    .part-prev-icon {
+    .swiper-button-next-l {
         left: 0;
     }
-    .part-next-icon {
+    .swiper-button-prev-l {
         right: 0;
     }
 }
@@ -2134,3 +2129,4 @@ button.btn.btn-yellow {
 .product.carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
+
