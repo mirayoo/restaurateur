@@ -939,6 +939,9 @@ p.footer-subtitle {
     font-weight: 300;
     color: #0673ce;
 }
+.advantages .row .col-md-3 a:hover {
+    text-decoration: none;
+}
 
 .advantages .container {
     margin-top: 34px;
@@ -1111,7 +1114,7 @@ button.btn.btn-yellow {
     content: url(../img/next-1.svg);
     padding: 8px;
     margin-right: 20px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0);
 }
 
 .dark-block .nav-link.active span.circle-icon, .dark-block .nav-link:hover span.circle-icon {
@@ -1192,7 +1195,7 @@ button.btn.btn-yellow {
     content: url(../img/next-1.svg);
     padding: 5px;
     margin-right: 20px;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0);
 }
 
 .dark-block-right .nav-link.active span.circle-icon, .dark-block-right .nav-link:hover span.circle-icon {
