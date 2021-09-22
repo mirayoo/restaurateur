@@ -1091,6 +1091,7 @@ button.btn.btn-yellow {
 .dark-block .nav-link {
     border: none;
     padding: 0;
+    background: rgba(0,0,0,0);
 }
 .dark-block .nav-link.active {
     background: rgba(0,0,0,0);
