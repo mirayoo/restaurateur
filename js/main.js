@@ -77,25 +77,7 @@ document.addEventListener("DOMContentLoaded", function(){
       } 
   });
 }); 
-
-$(document).ready(function() {
-  $(window).scroll(function() {
-  if ($(this).scrollTop() > 120) {
-  $('#toTopBtn').fadeIn();
-  } else {
-  $('#toTopBtn').fadeOut();
-  }
-  });
-  
-  $('#toTopBtn').click(function() {
-  $("html, body").animate({
-  scrollTop: 0
-  }), 1000;
-  return false;
-  });
-  });
-
-  
+ 
 /*Scroll To Top*/
 
 let mybutton = document.getElementById("btn-back-to-top");
@@ -164,5 +146,40 @@ function backToTop() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+  });
+
+  // Слайдер лого
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    breakpoints: {
+      // when window width is <= 320px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+      },
+      863: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+      1149: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination-l',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next-l",
+      prevEl: ".swiper-button-prev-l",
     },
   });
