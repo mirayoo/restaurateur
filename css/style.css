@@ -1088,7 +1088,9 @@ button.btn.btn-yellow {
     padding-right: 0;
     background-color: rgba(0,0,0,0);
 }
-
+.dark-block .nav-tabs p.d-flex {
+    background-color: rgba(0,0,0,0);
+}
 .dark-block .nav-link {
     border: none;
     padding: 0;
