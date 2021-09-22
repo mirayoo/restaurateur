@@ -1090,7 +1090,7 @@ button.btn.btn-yellow {
     padding: 0;
 }
 .dark-block .nav-link.active {
-    background: transparent;
+    background: rgba(0,0,0,0);
 }
 
 .dark-block .nav-link p {
