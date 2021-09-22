@@ -1086,6 +1086,7 @@ button.btn.btn-yellow {
     padding-top: 20px;
     margin-bottom: 25px;
     padding-right: 0;
+    background-color: rgba(0,0,0,0);
 }
 
 .dark-block .nav-link {
